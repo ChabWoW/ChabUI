@@ -1,0 +1,12 @@
+## Interface: 120000, 120001
+## Title: ChabUI
+## DefaultState: Enabled
+## Category: User Interface
+
+
+
+Modules/ClearHiddenQuests.lua
+Modules/BCDMAnchors.lua
+Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
+Modules/SlashWA.lua
+Modules/SharedMedia_Chab/MyMedia.lua
