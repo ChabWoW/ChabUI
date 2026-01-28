@@ -1,7 +1,7 @@
 local function ShowCooldownViewerSettings()
 	if InCombatLockdown() then
 		print("Try again once you're out of combat")
-		--test
+		--testa
 		return
 	end
 
