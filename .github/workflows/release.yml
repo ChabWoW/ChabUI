@@ -1,0 +1,36 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get version from tag
+        id: tag_version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create addon package
+        run: |
+          mkdir -p release
+          zip -r release/ChabUI-${{ steps.tag_version.outputs.VERSION }}.zip \
+            ChabUI.toc \
+            Init.lua \
+            Modules/ \
+            -x "*.git*" "*node_modules*" "*.vscode*" "*.github*" "*release*"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: release/ChabUI-${{ steps.tag_version.outputs.VERSION }}.zip
+          draft: false
+          prerelease: ${{ contains(steps.tag_version.outputs.VERSION, 'beta') || contains(steps.tag_version.outputs.VERSION, 'alpha') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
