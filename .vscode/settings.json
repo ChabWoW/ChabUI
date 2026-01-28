@@ -19,6 +19,7 @@
         "AuctionHouseFrame",
         "ProfessionsCustomerOrdersFrame",
         "CooldownViewerSettings",
-        "BCDMG"
+        "BCDMG",
+        "HousingDashboardFrame"
     ]
 }
