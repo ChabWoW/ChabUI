@@ -17,6 +17,8 @@
     "Lua.diagnostics.globals": [
         "SlashCmdList",
         "AuctionHouseFrame",
-        "ProfessionsCustomerOrdersFrame"
+        "ProfessionsCustomerOrdersFrame",
+        "CooldownViewerSettings",
+        "BCDMG"
     ]
 }
