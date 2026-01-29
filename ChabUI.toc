@@ -2,6 +2,7 @@
 ## Title: ChabUI
 ## DefaultState: Enabled
 ## Category: User Interface
+## SavedVariables: ChabUI
 
 
 
