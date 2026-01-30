@@ -3,6 +3,7 @@ for _, group in next, {
   'UtilityCooldownViewer',
   'BuffIconCooldownViewer',
   'BCDM_PowerBar',
+  'BCDM_SecondaryPowerBar',
   'BCDM_TrinketBar',
 } do
   -- hide whenever in pet battle, or when skyriding
