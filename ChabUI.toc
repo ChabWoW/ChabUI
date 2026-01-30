@@ -6,7 +6,6 @@
 
 
 Modules/ClearHiddenQuests.lua
-Modules/BCDMAnchors.lua
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
 Modules/SlashWA.lua
 Modules/EndeavorProgressText.lua
