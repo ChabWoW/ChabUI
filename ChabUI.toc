@@ -2,13 +2,13 @@
 ## Title: ChabUI
 ## DefaultState: Enabled
 ## Category: User Interface
-## SavedVariables: ChabUI
 
-Modules/OptionsPanel.lua
+
+
 Modules/ClearHiddenQuests.lua
 Modules/BCDMAnchors.lua
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
 Modules/SlashWA.lua
 Modules/EndeavorProgressText.lua
---Modules/CDMHide.lua
+Modules/CDMHide.lua
 Modules/SharedMedia_Chab/MyMedia.lua

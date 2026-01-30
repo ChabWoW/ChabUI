@@ -107,8 +107,75 @@ local moduleConfig = {
 
 ## Key Files
 
-- `ChabUI.toc`: Addon manifest and load order
-- `Modules/ClearHiddenQuests.lua`: Quest filtering example
-- `Modules/CurrentExpansionOnlyAuctionHouseFilter.lua`: UI hooking and EventRegistry pattern
-- `Modules/SharedMedia_Chab/MyMedia.lua`: LibSharedMedia integration
+This file provides instructions for GitHub Copilot on how to assist with code suggestions and completions across the entire repository.
 
+
+This project is a World of Warcraft addon written in Lua. When providing code suggestions, please adhere to the following guidelines:
+
+Technical Context
+World of Warcraft Addon Architecture
+
+    This is a WoW addon written in Lua using the WoW API
+    Addons use event-driven architecture with callbacks
+    Primary focus: Inventory/Items systems
+    UI interactions may involve frames and widgets
+
+Key WoW API Systems Used
+
+    Inventory/Items API: Bags, items, equipment, filtering
+    Events/Callbacks: Responding to inventory and UI events
+    UI Frames: Potential interaction with item filtering UI elements
+
+Development Priorities
+
+    Code Quality: Write clean, maintainable, and well-structured Lua code
+    Performance: Minimize performance impact on the game client
+        Avoid excessive event handlers
+        Be mindful of frame rate impact
+        Cache data when appropriate
+
+
+Coding Standards
+Lua Conventions for WoW Addons
+
+    Follow standard WoW addon Lua conventions
+    Use PascalCase for addon-specific global functions
+    Use camelCase for local functions and variables
+    Prefix addon-specific globals with addon name to avoid conflicts
+    Use local variables whenever possible for performance
+
+Code Organization
+
+    Keep event handlers lightweight
+    Separate UI code from logic where possible
+    Comment complex WoW API interactions
+    Document any non-obvious behavior or workarounds
+
+WoW-Specific Best Practices
+
+    Always unregister events when they're no longer needed
+    Use secure templates for action-related UI when required
+    Test across different UI scales and resolutions
+    Consider compatibility with popular UI addons
+
+Project Structure
+
+Standard WoW addon structure:
+
+    .toc file: Addon metadata and file load order
+    .lua files: Addon logic and functionality
+    .xml files (optional): UI frame definitions
+
+Helpful Context for AI Assistants
+
+    WoW uses Lua 5.1 with some modifications
+    The WoW API changes between expansions; assume current retail version unless specified
+    Many standard Lua libraries are not available (io, os, etc.)
+    Focus on using WoW's provided API functions
+    When in doubt about API usage, mention that testing in-game is required
+
+Additional Resources
+
+    WoW API Documentation: https://warcraft.wiki.gg/
+    Addon development guides and community forums
+    Wow ui source code for reference: https://github.com/Gethe/wow-ui-source
