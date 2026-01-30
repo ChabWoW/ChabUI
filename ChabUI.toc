@@ -4,8 +4,7 @@
 ## Category: User Interface
 ## SavedVariables: ChabUI
 
-
-
+Modules/OptionsPanel.lua
 Modules/ClearHiddenQuests.lua
 Modules/BCDMAnchors.lua
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
