@@ -1,11 +1,17 @@
-for _, group in next, {
+local tblCDMFrames   = {
   'EssentialCooldownViewer',
   'UtilityCooldownViewer',
   'BuffIconCooldownViewer',
-  'BCDM_PowerBar',
-  'BCDM_SecondaryPowerBar',
-  'BCDM_TrinketBar',
-} do
+} 
+
+
+if  C_AddOns.IsAddOnLoaded("BetterCooldownManager") then
+  tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_PowerBar'
+  tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_SecondaryPowerBar'
+  tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_TrinketBar'
+end
+
+for _, group in next, tblCDMFrames do
   -- hide whenever in pet battle, or when skyriding
   local listener = CreateFrame('Frame', nil, nil, 'SecureHandlerStateTemplate')
   RegisterStateDriver(listener, 'visibility', '[petbattle][bonusbar:5] hide; show')
