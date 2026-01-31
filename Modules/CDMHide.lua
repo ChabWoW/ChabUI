@@ -16,6 +16,8 @@ for _, group in next, tblCDMFrames do
   local listener = CreateFrame('Frame', nil, nil, 'SecureHandlerStateTemplate')
   RegisterStateDriver(listener, 'visibility', '[petbattle][bonusbar:5] hide; show')
   listener:HookScript('OnAttributeChanged', function(_, _, shouldHide)
-    _G[group]:SetAlphaFromBoolean(not shouldHide, 1, 0)
+    if _G[group] then
+      _G[group]:SetAlphaFromBoolean(not shouldHide, 1, 0)
+    end
   end)
 end
