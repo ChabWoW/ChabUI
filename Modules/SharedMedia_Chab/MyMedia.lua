@@ -17,9 +17,8 @@ LSM:Register("border", "SeerahScalloped", [[Interface\AddOns\ChabUI\Modules\Shar
 -- -----
 --   FONT
 -- -----
-LSM:Register("font", "GothamNarrowUltra", [[Interface\AddOns\ChabUI\Modules\SharedMedia_Chab\font\GothamNarrowUltra.ttf]]) 
-LSM:Register("font", "KMT-GothamXN_Ultra", [[Interface\AddOns\ChabUI\Modules\SharedMedia_Chab\font\KMT-GothamXN_Ultra.ttf]]) 
 LSM:Register("font", "Naowh", [[Interface\AddOns\ChabUI\Modules\SharedMedia_Chab\font\Naowh.ttf]]) 
+LSM:Register("font", "AvantGarde", [[Interface\AddOns\ChabUI\Modules\SharedMedia_Chab\font\AvantGarde.ttf]]) 
 
 -- -----
 --   SOUND
