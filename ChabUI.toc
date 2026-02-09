@@ -4,10 +4,7 @@
 ## Category: User Interface
 
 
-
-Modules/ClearHiddenQuests.lua
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
 Modules/SlashWA.lua
-Modules/EndeavorProgressText.lua
 Modules/CDMHide.lua
 Modules/SharedMedia_Chab/MyMedia.lua
