@@ -10,6 +10,7 @@ if  C_AddOns.IsAddOnLoaded("BetterCooldownManager") then
   tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_SecondaryPowerBar'
   tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_TrinketBar'
   tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_CustomCooldownViewer'
+  tblCDMFrames[#tblCDMFrames + 1] = 'BCDM_AdditionalCustomCooldownViewer'
 end
 
 for _, group in next, tblCDMFrames do
