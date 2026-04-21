@@ -1,10 +1,9 @@
-## Interface: 120000, 120001
+## Interface: 120001, 120005
 ## Title: ChabUI
 ## DefaultState: Enabled
 ## Category: User Interface
 
 
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
-Modules/SlashWA.lua
 Modules/CDMHide.lua
 Modules/SharedMedia_Chab/MyMedia.lua
