@@ -7,3 +7,4 @@
 Modules/CurrentExpansionOnlyAuctionHouseFilter.lua
 Modules/CDMHide.lua
 Modules/SharedMedia_Chab/MyMedia.lua
+Modules/CleanExtraActionButton.lua
